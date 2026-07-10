@@ -1,0 +1,29 @@
+name: Remove misplaced Fusion skill
+
+on:
+  push:
+    paths:
+      - '.github/workflows/remove-misplaced-fusion-skill.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Restore repository to its prior empty state
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf skills/fusion-cad-guardian
+          rm -f README.md
+          rm -f .github/workflows/remove-misplaced-fusion-skill.yml
+          rmdir .github/workflows 2>/dev/null || true
+          rmdir .github 2>/dev/null || true
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: remove misplaced Fusion CAD Guardian files"
+          git push
