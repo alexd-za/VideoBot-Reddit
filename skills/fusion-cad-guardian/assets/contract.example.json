@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "part_name": "Example Part",
+  "units": "mm",
+  "expected_dimensions_mm": {
+    "x": {"target": 20.0, "tolerance": 0.1},
+    "y": {"target": 20.0, "tolerance": 0.1},
+    "z": {"target": 10.0, "tolerance": 0.1}
+  },
+  "require_watertight": true,
+  "max_shells": 1,
+  "max_boundary_edges": 0,
+  "max_nonmanifold_edges": 0,
+  "max_degenerate_triangles": 0,
+  "max_duplicate_triangles": 0,
+  "max_inconsistent_winding_edges": 0,
+  "min_triangles": 12,
+  "max_triangles": 2000000,
+  "require_positive_signed_volume": true,
+  "build_plate": {
+    "axis": "z",
+    "plane_mm": 0.0,
+    "tolerance_mm": 0.05,
+    "min_contact_vertices": 3
+  },
+  "notes": [
+    "Replace example dimensions with actual acceptance criteria.",
+    "Mesh checks do not verify wall thickness or mechanical strength."
+  ]
+}
