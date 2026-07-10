@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+SKILL.md
+agents/openai.yaml
+assets/batch.example.json
+assets/contract.example.json
+references/capability-boundaries.md
+references/design-contract.md
+references/mcp-routing.md
+references/mechanical-verification.md
+scripts/guardian.ps1
+scripts/guardian.py
+tests/test_guardian.py
