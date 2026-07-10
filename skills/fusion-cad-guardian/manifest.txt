@@ -10,4 +10,8 @@ references/mcp-routing.md
 references/mechanical-verification.md
 scripts/guardian.ps1
 scripts/guardian.py
+scripts/guardian_lib/__init__.py
+scripts/guardian_lib/contracts.py
+scripts/guardian_lib/core.py
+scripts/guardian_lib/reports.py
 tests/test_guardian.py
