@@ -1,0 +1,14 @@
+{
+  "jobs": [
+    {
+      "name": "left-bracket",
+      "mesh": "exports/left-bracket.stl",
+      "contract": "contracts/left-bracket.json"
+    },
+    {
+      "name": "right-bracket",
+      "mesh": "exports/right-bracket.stl",
+      "contract": "contracts/right-bracket.json"
+    }
+  ]
+}
